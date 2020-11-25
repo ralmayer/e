@@ -1,0 +1,21 @@
+.stack {
+  --space: var(--s1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.stack > * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.stack > * + * {
+  margin-top: var(--space);
+}
+
+@media screen and (max-width: 734px) {
+  .small.stack {
+    --space: var(--s-2);
+  }
+}

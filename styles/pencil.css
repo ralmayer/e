@@ -1,0 +1,32 @@
+.pencil-image {
+  width: 700px;
+  height: 373px;
+  background-size: 100% 373px;
+  background-repeat: no-repeat;
+  background-image: url("/images/pencil_large.jpg");
+  position: relative;
+  margin: var(--s2) 0 0 0;
+}
+
+@media only screen and (max-width: 1068px) {
+  .pencil-image {
+    width: 360px;
+    height: 250px;
+    background-position: no-repeat;
+    background-size: 100% 250px;
+    background-image: url("/images/pencil_medium.jpg");
+  }
+}
+
+@media only screen and (max-width: 734px) {
+  .pencil-image {
+    width: 528px;
+    height: 269px;
+    background-position: no-repeat;
+    background-size: 528px 269px;
+    background-image: url("/images/pencil_small.jpg");
+    /* position: relative; */
+    left: 50%;
+    margin-left: -232px;
+  }
+}

@@ -1,0 +1,22 @@
+.grid {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid > div {
+  background: var(--white-1);
+  padding: var(--s1) var(--s1);
+}
+
+@media screen and (max-width: 734px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* @supports (width: min(100px, 100%)) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+  }
+} */
