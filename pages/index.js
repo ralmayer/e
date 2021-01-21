@@ -1,13 +1,10 @@
 import { useRef } from "react";
 import Link from "next/link";
 import Head from "next/head";
-import useSmoothScroll from "../components/smoothScroll";
 
 export default function Home() {
   const app = useRef();
   const scrollContainer = useRef();
-
-  useSmoothScroll(app, scrollContainer);
 
   return (
     <>
@@ -15,12 +12,8 @@ export default function Home() {
         <title>Fuck This</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <main ref={app}>
-        <div
-          className="stack"
-          ref={scrollContainer}
-          style={{ paddingBottom: "var(--s4)" }}
-        >
+      <main>
+        <div className="stack" style={{ paddingBottom: "var(--s4)" }}>
           <div
             className="stack bg:w-1 pd-t:3 sm:pd-b-3"
             style={{ "--space": "var(--s5)" }}
